@@ -1,0 +1,20 @@
+# AM Seguridad Demo
+
+Sitio demo público de AM Seguridad, empresa fundada hace 35 años.
+
+URL principal: https://webamdemo2026.z19.web.core.windows.net/
+
+La página presenta una propuesta institucional y comercial de seguridad integral para hogares, comercios, empresas, instituciones, flotas y custodias.
+
+Secciones principales:
+- Inicio: propuesta de seguridad privada integral, diagnóstico, tecnología, monitoreo y respuesta.
+- Método AM 360: relevamiento, matriz de riesgo, diseño del plan, implementación, monitoreo y mejora continua.
+- Operación visible: videos y material visual sobre monitoreo, alarmas, accesos y seguimiento operativo.
+- Servicios: vigilancia física, seguridad electrónica, monitoreo, seguimiento satelital, seguridad patrimonial, investigaciones y aplicaciones a medida.
+- Soluciones por necesidad: personas y hogar, negocios y comercios, empresas e instituciones.
+- Custodias AM: sección sobre unidades Cronos operativas para custodia y seguimiento.
+- Empresa: misión, visión, valores e historia institucional.
+- Contacto: teléfono, email, dirección y acceso a WhatsApp.
+
+BOT AM:
+Asistente comercial orientado a seguridad. Responde consultas sobre CCTV, alarmas, monitoreo, control de accesos, custodias, flotas, vigilancia, instalaciones, mantenimiento y aplicaciones a medida vinculadas a seguridad.

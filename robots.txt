@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://webamdemo2026.z19.web.core.windows.net/sitemap.xml
