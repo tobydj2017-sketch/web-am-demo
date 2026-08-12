@@ -362,9 +362,10 @@
       </section>
 
       <section class="section company" id="empresa">
-        <div class="company-photo">
-          <img src="assets/institucional.jpg" alt="Equipo e instalaciones de AM Seguridad">
-        </div>
+        <button class="company-photo image-zoom-trigger" type="button" data-image-zoom="assets/institucional-zoom.jpg" data-image-alt="Nuestra historia en pocas palabras de AM Seguridad" aria-label="Ampliar historia de AM Seguridad">
+          <img src="assets/institucional.jpg" alt="Nuestra historia en pocas palabras de AM Seguridad">
+          <span><i data-lucide="maximize-2" aria-hidden="true"></i> Ampliar</span>
+        </button>
         <div class="company-copy">
           <p class="eyebrow"><span></span> Nuestra empresa</p>
           <h2>Experiencia, personalización y pronta respuesta</h2>
@@ -388,6 +389,15 @@
           </div>
         </div>
       </section>
+
+      <div class="image-lightbox" data-image-lightbox aria-hidden="true">
+        <button class="image-lightbox__close" type="button" data-image-lightbox-close aria-label="Cerrar imagen ampliada">
+          <i data-lucide="x" aria-hidden="true"></i>
+        </button>
+        <div class="image-lightbox__stage" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+          <img src="" alt="" data-image-lightbox-img>
+        </div>
+      </div>
 
       <section class="section contact" id="contacto">
         <div class="contact-panel">

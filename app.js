@@ -13,6 +13,10 @@ const chatStarts = document.querySelectorAll("[data-chat-start]");
 const chatNudge = document.querySelector("[data-chat-nudge]");
 const chatAudioToggle = document.querySelector("[data-chat-audio]");
 const custodyVideo = document.querySelector("[data-custody-video]");
+const imageZoomTriggers = document.querySelectorAll("[data-image-zoom]");
+const imageLightbox = document.querySelector("[data-image-lightbox]");
+const imageLightboxImg = document.querySelector("[data-image-lightbox-img]");
+const imageLightboxClose = document.querySelector("[data-image-lightbox-close]");
 const scrollProgress = document.querySelector("[data-scroll-progress]");
 const cursorAura = document.querySelector("[data-cursor-aura]");
 const kineticSections = document.querySelectorAll(".hero, .quick-contact, .section, .site-footer");
@@ -81,6 +85,41 @@ const playPopupSound = () => {
     // Audio is optional; browser policies can block it until the first interaction.
   }
 };
+
+const closeImageLightbox = () => {
+  if (!imageLightbox || !imageLightboxImg) return;
+  imageLightbox.classList.remove("is-open");
+  imageLightbox.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("lightbox-open");
+  window.setTimeout(() => {
+    if (!imageLightbox.classList.contains("is-open")) {
+      imageLightboxImg.removeAttribute("src");
+      imageLightboxImg.removeAttribute("alt");
+    }
+  }, 240);
+};
+
+imageZoomTriggers.forEach((trigger) => {
+  trigger.addEventListener("click", () => {
+    if (!imageLightbox || !imageLightboxImg) return;
+    imageLightboxImg.src = trigger.dataset.imageZoom;
+    imageLightboxImg.alt = trigger.dataset.imageAlt || "Imagen ampliada";
+    imageLightbox.classList.add("is-open");
+    imageLightbox.setAttribute("aria-hidden", "false");
+    document.body.classList.add("lightbox-open");
+  });
+});
+
+imageLightboxClose?.addEventListener("click", closeImageLightbox);
+imageLightbox?.addEventListener("click", (event) => {
+  if (event.target === imageLightbox) closeImageLightbox();
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && imageLightbox?.classList.contains("is-open")) {
+    closeImageLightbox();
+  }
+});
 
 const pulseSelection = (event) => {
   selectionTransition.style.setProperty("--select-x", `${event.clientX || window.innerWidth / 2}px`);
