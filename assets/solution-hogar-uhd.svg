@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Personas y hogar - AM Seguridad</title>
+  <desc id="desc">Ilustracion nocturna de un hogar protegido por monitoreo, alarmas y camaras.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#07131d"/>
+      <stop offset="0.55" stop-color="#06110b"/>
+      <stop offset="1" stop-color="#0c2514"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" x2="1">
+      <stop offset="0" stop-color="#39b54a" stop-opacity="0"/>
+      <stop offset="0.48" stop-color="#7bff8c" stop-opacity="0.82"/>
+      <stop offset="1" stop-color="#39b54a" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <g opacity="0.55">
+    <circle cx="260" cy="132" r="5" fill="#dfffe6"/>
+    <circle cx="438" cy="190" r="4" fill="#dfffe6"/>
+    <circle cx="1240" cy="112" r="5" fill="#dfffe6"/>
+    <circle cx="1425" cy="256" r="3" fill="#dfffe6"/>
+    <circle cx="840" cy="100" r="3" fill="#dfffe6"/>
+    <circle cx="1096" cy="184" r="4" fill="#dfffe6"/>
+  </g>
+  <g opacity="0.95">
+    <rect x="116" y="520" width="1368" height="230" fill="#071008"/>
+    <path d="M186 520h170v-96h120v96h190V370h160v150h210V438h150v82h230v230H186z" fill="#101d24"/>
+    <path d="M230 520h140v-210h172v210h218V254h220v266h220V350h176v170h70v230H230z" fill="#122b32"/>
+    <g fill="#39b54a">
+      <rect x="284" y="354" width="42" height="46"/><rect x="356" y="354" width="42" height="46"/>
+      <rect x="284" y="438" width="42" height="46"/><rect x="356" y="438" width="42" height="46"/>
+      <rect x="610" y="312" width="50" height="52"/><rect x="690" y="312" width="50" height="52"/>
+      <rect x="610" y="406" width="50" height="52"/><rect x="690" y="406" width="50" height="52"/>
+      <rect x="880" y="308" width="52" height="56"/><rect x="970" y="308" width="52" height="56"/>
+      <rect x="880" y="410" width="52" height="56"/><rect x="970" y="410" width="52" height="56"/>
+      <rect x="1256" y="396" width="42" height="50"/><rect x="1326" y="396" width="42" height="50"/>
+    </g>
+    <g opacity="0.42" fill="#eaffee">
+      <rect x="284" y="354" width="42" height="46"/><rect x="610" y="312" width="50" height="52"/>
+      <rect x="970" y="410" width="52" height="56"/><rect x="1326" y="396" width="42" height="50"/>
+    </g>
+  </g>
+  <g filter="url(#glow)">
+    <path d="M1120 92l278 154-408 250-142-85z" fill="url(#beam)" opacity="0.82"/>
+    <path d="M1214 150l140 78-384 232-74-44z" fill="#39b54a" opacity="0.55"/>
+    <path d="M1318 202l82 45-354 213-42-25z" fill="#a9ffb6" opacity="0.68"/>
+  </g>
+  <g transform="translate(1140 116)" filter="url(#glow)">
+    <path d="M220 0l136 56v132c0 126-82 206-136 234-54-28-136-108-136-234V56z" fill="#dfe5e2" stroke="#39b54a" stroke-width="10"/>
+    <path d="M220 40l98 40v103c0 84-52 143-98 170-46-27-98-86-98-170V80z" fill="#101412" opacity="0.9"/>
+    <circle cx="220" cy="176" r="72" fill="#e9efeb"/>
+    <path d="M172 154c20-46 76-46 96 0-27-12-69-12-96 0zM166 164c17 34 52 48 54 86-32-4-58-31-58-66 0-7 1-14 4-20zM278 164c3 6 4 13 4 20 0 35-26 62-58 66 2-38 37-52 54-86z" fill="#3b3f3c"/>
+    <circle cx="190" cy="166" r="15" fill="#101412"/><circle cx="250" cy="166" r="15" fill="#101412"/>
+    <path d="M220 187l18 20-18 28-18-28z" fill="#101412"/>
+  </g>
+  <g transform="translate(112 106)">
+    <text x="0" y="0" fill="#f7fff8" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="900" letter-spacing="0">Personas y hogar</text>
+    <text x="0" y="72" fill="#6df27b" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800">Te cuida AM Seguridad</text>
+    <text x="0" y="128" fill="#dceee2" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="600">Alarmas, camaras, cercos y monitoreo remoto.</text>
+  </g>
+  <rect x="72" y="72" width="1456" height="756" rx="36" fill="none" stroke="#39b54a" stroke-opacity="0.42" stroke-width="3"/>
+</svg>
