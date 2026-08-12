@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="canonical" href="https://webamdemo2026.z19.web.core.windows.net/">
-    <link rel="stylesheet" href="styles.css?v=40">
+    <link rel="stylesheet" href="styles.css?v=41">
   </head>
   <body>
     <div class="scroll-progress" data-scroll-progress aria-hidden="true"></div>
@@ -50,7 +50,7 @@
     </nav>
 
     <main id="inicio">
-      <section class="hero">
+      <section class="hero hero-premium">
         <div class="hero-media" aria-hidden="true">
           <video autoplay muted loop playsinline poster="assets/fachada-ai-bg.png">
             <source src="https://www.pexels.com/download/video/7255101/" type="video/mp4">
@@ -64,29 +64,38 @@
           <span></span>
         </div>
         <div class="scan-lines" aria-hidden="true"></div>
-        <div class="hero-shield" aria-hidden="true">
-          <img src="assets/am-shield.png" alt="">
-        </div>
         <div class="hero-content">
-          <p class="eyebrow"><span></span> Seguridad privada integral</p>
-          <h1 class="hero-brand-title" aria-label="AM Seguridad">
-            <span class="brand-am">AM</span>
-            <span class="brand-seguridad">SEGURIDAD</span>
-          </h1>
-          <p class="hero-tagline">Diagnóstico. Tecnología. Monitoreo. Respuesta.</p>
-          <p class="hero-copy">
-            Planes de seguridad física, electrónica y monitoreo armados desde un relevamiento real:
-            riesgo, cobertura, operación y respuesta para cada cliente.
-          </p>
-          <div class="hero-actions">
-            <a class="primary-button" href="#contacto">
-              <i data-lucide="shield-check" aria-hidden="true"></i>
-              Pedir asesoramiento
-            </a>
-            <a class="secondary-button" href="#metodo">
-              Ver método
-              <i data-lucide="arrow-down" aria-hidden="true"></i>
-            </a>
+          <div class="hero-copy-panel">
+            <p class="eyebrow"><span></span> Seguridad privada integral</p>
+            <h1 class="hero-brand-title" aria-label="AM Seguridad">
+              <span class="brand-am">AM</span>
+              <span class="brand-seguridad">SEGURIDAD</span>
+            </h1>
+            <p class="hero-tagline">Diagnóstico. Tecnología. Monitoreo. Respuesta.</p>
+            <p class="hero-copy">
+              Planes de seguridad física, electrónica y monitoreo armados desde un relevamiento real:
+              riesgo, cobertura, operación y respuesta para cada cliente.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-button" href="#contacto">
+                <i data-lucide="shield-check" aria-hidden="true"></i>
+                Pedir asesoramiento
+              </a>
+              <a class="secondary-button" href="#metodo">
+                Ver método
+                <i data-lucide="arrow-down" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-shield">
+              <span class="shield-glow"></span>
+              <img src="assets/am-shield.png" alt="">
+            </div>
+            <div class="hero-visual-brand">
+              <strong><span>AM</span> Seguridad</strong>
+              <small>Protección integral 360</small>
+            </div>
           </div>
           <div class="hero-stats" aria-label="Datos destacados">
             <div>
@@ -99,7 +108,11 @@
             </div>
             <div>
               <strong>360</strong>
-              <span>seguridad integral</span>
+              <span>cobertura integral</span>
+            </div>
+            <div>
+              <strong>AM</strong>
+              <span>diagnóstico a medida</span>
             </div>
           </div>
         </div>
@@ -459,7 +472,7 @@
     <aside class="chatbot" data-chatbot aria-label="Chatbot de AM Seguridad">
       <div class="chatbot-panel" data-chatbot-panel aria-live="polite">
         <div class="chatbot-header">
-          <img src="assets/am-owl-mark.jpg" alt="Asistente AM">
+          <img src="assets/am-shield.png" alt="Asistente AM">
           <div>
             <strong>BOT AM</strong>
             <span>Especialista en seguridad</span>
@@ -491,7 +504,7 @@
       <button class="chatbot-bubble" type="button" aria-label="Abrir chatbot" aria-expanded="false" data-chat-toggle>
         <span class="chatbot-ping"></span>
         <span class="owl-orbit" aria-hidden="true"></span>
-        <img src="assets/am-owl-mark.jpg" alt="">
+        <img src="assets/am-shield.png" alt="">
       </button>
       <button class="chatbot-nudge" type="button" data-chat-nudge aria-live="polite">
         Realizá tu consulta
@@ -499,6 +512,6 @@
     </aside>
 
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-    <script src="app.js?v=39"></script>
+    <script src="app.js?v=41"></script>
   </body>
 </html>
