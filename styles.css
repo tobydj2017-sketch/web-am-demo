@@ -4728,3 +4728,74 @@ body.lightbox-open {
     font-size: 15px;
   }
 }
+
+
+/* Hero background clarity pass v51 */
+.hero-premium .hero-media {
+  background: #07110b;
+  transform: translate3d(0, calc(var(--parallax-y) * 0.45), 0) scale(1.01);
+}
+
+.hero-premium .hero-media img {
+  z-index: 0;
+  opacity: 0.82;
+  object-position: center 58%;
+  transform: scale(1.01);
+  filter: saturate(1.05) contrast(1.18) brightness(0.8);
+}
+
+.hero-premium .hero-media video {
+  z-index: 1;
+  opacity: 0.13;
+  mix-blend-mode: screen;
+  object-position: center center;
+  filter: grayscale(0.15) saturate(0.7) contrast(1.08) brightness(0.72) blur(1px);
+}
+
+.hero-premium .hero-overlay {
+  background:
+    radial-gradient(circle at 50% 35%, rgba(57, 181, 74, 0.23), transparent 24vw),
+    radial-gradient(circle at 50% 52%, rgba(255, 255, 255, 0.1), transparent 12vw),
+    radial-gradient(circle at 14% 38%, rgba(57, 181, 74, 0.12), transparent 18vw),
+    radial-gradient(circle at var(--cursor-x) var(--cursor-y), rgba(57, 181, 74, 0.1), transparent 20vw),
+    linear-gradient(90deg, rgba(3, 9, 6, 0.68) 0%, rgba(4, 13, 8, 0.4) 42%, rgba(3, 9, 7, 0.68) 100%),
+    linear-gradient(0deg, rgba(3, 7, 5, 0.92) 0%, rgba(3, 7, 5, 0.14) 52%, rgba(3, 7, 5, 0.74) 100%);
+}
+
+.hero-premium .scan-lines {
+  opacity: 0.15;
+  mix-blend-mode: soft-light;
+}
+
+.hero-premium .ai-orbit span {
+  opacity: 0.22;
+  border-color: rgba(128, 236, 141, 0.28);
+  box-shadow: inset 0 0 26px rgba(57, 181, 74, 0.08), 0 0 12px rgba(57, 181, 74, 0.08);
+}
+
+.hero-premium .hero-brand-title {
+  filter: drop-shadow(0 12px 0 rgba(0, 0, 0, 0.24)) drop-shadow(0 28px 40px rgba(0, 0, 0, 0.72));
+}
+
+.hero-premium .hero-shield {
+  filter: drop-shadow(0 30px 64px rgba(0, 0, 0, 0.74)) drop-shadow(0 0 42px rgba(57, 181, 74, 0.45));
+}
+
+@media (max-width: 760px) {
+  .hero-premium .hero-media img {
+    opacity: 0.76;
+    object-position: center center;
+    filter: saturate(1.02) contrast(1.14) brightness(0.72);
+  }
+
+  .hero-premium .hero-media video {
+    opacity: 0.08;
+  }
+
+  .hero-premium .hero-overlay {
+    background:
+      radial-gradient(circle at 50% 30%, rgba(57, 181, 74, 0.2), transparent 42vw),
+      linear-gradient(90deg, rgba(3, 9, 6, 0.7), rgba(3, 9, 6, 0.58)),
+      linear-gradient(0deg, rgba(3, 7, 5, 0.94) 0%, rgba(3, 7, 5, 0.22) 52%, rgba(3, 7, 5, 0.78) 100%);
+  }
+}
