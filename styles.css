@@ -4959,3 +4959,63 @@ body.lightbox-open {
     font-size: 15px;
   }
 }
+
+
+/* AI realistic solution images v54 */
+.solution-list article {
+  grid-template-columns: minmax(300px, 0.72fr) minmax(260px, 1fr);
+  min-height: 230px;
+  padding: 14px;
+  gap: 24px;
+}
+
+.solution-list img {
+  min-height: 190px;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center center;
+  background: #08120c;
+  border: 1px solid rgba(57, 181, 74, 0.34);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22), inset 0 0 0 1px rgba(255, 255, 255, 0.14);
+  filter: saturate(1.08) contrast(1.08) brightness(0.98);
+}
+
+.solution-list article:hover img {
+  transform: translateZ(24px) scale(1.025);
+  filter: saturate(1.14) contrast(1.1) brightness(1.04);
+}
+
+.solution-list article:nth-child(1) img {
+  object-position: center center;
+}
+
+.solution-list article:nth-child(2) img {
+  object-position: center center;
+}
+
+.solution-list article:nth-child(3) img {
+  object-position: center center;
+}
+
+.solution-list h3 {
+  font-size: clamp(26px, 2.15vw, 33px);
+}
+
+.solution-list p {
+  color: #1f2d26;
+  font-size: clamp(16px, 1.32vw, 19px);
+  line-height: 1.48;
+}
+
+@media (max-width: 720px) {
+  .solution-list article {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .solution-list img {
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+  }
+}
